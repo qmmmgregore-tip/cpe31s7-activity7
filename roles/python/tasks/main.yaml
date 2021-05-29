@@ -1,0 +1,11 @@
+---
+# tasks file for roles/copyname
+- name: Copy file
+  copy:
+    name:"{{ filename }}"
+    dest: "/home/{{ user }}"
+    owner: "{{ user }}"
+    group: "{{ group }}"
+    mode: '0755'
+
+ 
